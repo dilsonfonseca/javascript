@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciamento de Funcionários</title>
+</head>
+<body>
+    <form id="funcionario-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required><br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" required><br>
+
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento"><br>
+
+        <label for="linguagem">Linguagem:</label>
+        <input type="text" id="linguagem"><br>
+
+        <button type="button" id="criar-btn">Criar Funcionário</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        function exibirErro(mensagem) {
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = `<p class="error">${mensagem}</p>`;
+        }
+
+        class Funcionario {
+            constructor(nome, idade, cargo) {
+                this.nome = nome;
+                this.idade = idade;
+                this.cargo = cargo;
+            }
+
+            seApresentar() {
+                return `Olá, meu nome é ${this.nome}, tenho ${this.idade} anos e sou ${this.cargo}.`;
+            }
+
+            trabalhar() {
+                return `${this.nome} está trabalhando.`;
+            }
+        }
+
+        class Gerente extends Funcionario {
+            constructor(nome, idade, cargo, departamento) {
+                super(nome, idade, cargo);
+                this.departamento = departamento;
+            }
+
+            gerenciar() {
+                return `${this.nome} está gerenciando o departamento ${this.departamento}.`;
+            }
+        }
+
+        class Desenvolvedor extends Funcionario {
+            constructor(nome, idade, cargo, linguagem) {
+                super(nome, idade, cargo);
+                this.linguagem = linguagem;
+            }
+
+            programar() {
+                return `${this.nome} está programando em ${this.linguagem}.`;
+            }
+        }
+
+        document.getElementById("criar-btn").addEventListener("click", () => {
+            const nome = document.getElementById("nome").value;
+            const idade = document.getElementById("idade").value;
+            const cargo = document.getElementById("cargo").value;
+            const departamento = document.getElementById("departamento").value;
+            const linguagem = document.getElementById("linguagem").value;
+
+            try {
+                if (!nome || !idade || !cargo) {
+                    throw new Error("Todos os campos obrigatórios devem ser preenchidos.");
+                }
+
+                let funcionario;
+
+                if (departamento) {
+                    funcionario = new Gerente(nome, idade, cargo, departamento);
+                } else if (linguagem) {
+                    funcionario = new Desenvolvedor(nome, idade, cargo, linguagem);
+                } else {
+                    funcionario = new Funcionario(nome, idade, cargo);
+                }
+
+                const outputDiv = document.getElementById("output");
+                outputDiv.innerHTML = `
+                    <p>${funcionario.seApresentar()}</p>
+                    <p>${funcionario.trabalhar()}</p>
+                    ${funcionario.gerenciar ? `<p>${funcionario.gerenciar()}</p>` : ""}
+                    ${funcionario.programar ? `<p>${funcionario.programar()}</p>` : ""}
+                `;
+            } catch (error) {
+                exibirErro(error.message);
+            }
+        });
+    </script>
+</body>
+</html>
