@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+</head>
+<body>
+    <h1>Sistema de Conferência</h1>
+    <p>Insira sua nacionalidade:</p>
+    <input type="text" name="nacionalidade" id="nacio">
+    <input type="button" value="submit" onclick="checarNacionalidade()">
+    <p id="resultado"></p>
+    <script>
+        function checarNacionalidade(){
+            let nacionalidadeInput = document.getElementById('nacio');
+            let nacionalidade = nacionalidadeInput.value;
+            let resultadoElement = document.getElementById('resultado');
+
+            if (nacionalidade.toLowerCase() === 'brasileiro'){
+                resultadoElement.innerHTML = 'Você pode passar direto';
+            } else {
+                resultadoElement.innerHTML = `Você não pode passar direto pois é um ${nacionalidade}`;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
