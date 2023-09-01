@@ -1,8 +1,10 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300&family=Sriracha&display=swap');
+
 body{
     background: rgb(101, 150, 255);
-    font: normal 15pt Arial;
+    font: normal 15pt Roboto;
 }
 
 header{
@@ -19,9 +21,3 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
     
 }
-
-footer{
-    color: white;
-    text-align: center;
-    font-style: italic;
-    }
