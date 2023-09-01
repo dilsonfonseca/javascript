@@ -17,7 +17,7 @@
             let nacionalidade = nacionalidadeInput.value;
             let resultadoElement = document.getElementById('resultado');
 
-            if (nacionalidade.toLowerCase() === 'brasileiro' || 'br'){
+            if (nacionalidade.toLowerCase() === 'brasileiro' || 'br' || 'Brasileiro'){
                 resultadoElement.innerHTML = 'Você pode passar direto';
             } else {
                 resultadoElement.innerHTML = `Você não pode passar direto pois é um ${nacionalidade}`;
