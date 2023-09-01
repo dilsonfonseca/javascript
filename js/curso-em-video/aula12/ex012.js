@@ -1,3 +1,4 @@
+
 let hora = 22
 console.log (`Agora são exatamente ${hora} horas`)
 if (hora < 12) {
