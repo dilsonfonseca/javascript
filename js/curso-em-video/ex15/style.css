@@ -21,3 +21,9 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
     
 }
+
+img{
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);;
+}
