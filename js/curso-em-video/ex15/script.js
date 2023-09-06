@@ -12,7 +12,7 @@ function verificar(){
         let img = document.createElement('img')
         img.setAttribute('id','foto')
         if (fsex[0].checked) {
-            gênero = 'Homem'
+            gênero = 'Homemm'
             if (idade >= 0 && idade < 10){
                 img.setAttribute('src', 'img/baby-1-m.png')
             } else if (idade < 21) {
