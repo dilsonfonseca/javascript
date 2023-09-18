@@ -1,2 +1,2 @@
 let aleatorio = 1
-console.log(aleatorio)
+console.log(aleatorio)c
