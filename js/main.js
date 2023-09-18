@@ -1,2 +1,3 @@
-let aleatorio = 1
-console.log(aleatorio)c
+for (let i = 1; i <= 100; i+=2){
+    console.log(i)
+}
