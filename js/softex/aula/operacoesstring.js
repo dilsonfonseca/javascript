@@ -13,7 +13,17 @@ console.log("Texto extraído: " + parteTexto)*/
 let novoTexto = texto.replace("Microsoft", "W3Schools")
 console.log('Novo Texto : ' + novoTexto)*/
 
-let texto1 = "Hello World!"
+/*let texto1 = "Hello World!"
 let texto2 = texto1.toUpperCase();
 
-console.log(texto2)
+console.log(texto2)*/
+
+/*let text1 = "Hello World"
+let text2 = text1.toLowerCase()
+console.log(text2)*/
+
+/*let texto1 = "                            Hello World                      "
+let texto2 = texto1.trimStart()
+
+console.log(texto2)*/
+
