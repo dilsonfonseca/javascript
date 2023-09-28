@@ -34,9 +34,11 @@ while (i < array.length){
     i++
 }*/
 
-let nomes =  ['Alberto', 'Alex', 'Sandro', 'Roberta']
+/*let nomes =  ['Alberto', 'Alex', 'Sandro', 'Roberta']
 
 function maiusculo(item){
     console.log(item.toUpperCase())
 }
-nomes.forEach(maiusculo)
+nomes.forEach(maiusculo)*/
+
+
