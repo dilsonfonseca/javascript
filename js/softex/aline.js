@@ -14,7 +14,7 @@ if (!isString(nome)){
 }
 
 //Lembrar sempre de colocar o parse na frente, se não o resultado do prompt vai ser sempre string.
- let salario = parseFloat(window.prompt("Digite o seu salário:"))
+ let salario = parseFloat(window.prompt("Digit o seu salário:"))
  if (!isNumber(salario)){
     window.alert("Por favor, digite um número")
  }
