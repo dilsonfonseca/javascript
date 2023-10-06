@@ -27,7 +27,7 @@ function adicionar() {
         lista.appendChild(item)
         res.innerHTML = ''
     } else { 
-        window.alert("Valor invalido ou já encontrado na lista.")
+        window.alert("Valor inalido ou já encontrado na lista.")
     }
     num.value = ''
     num.focus()
