@@ -27,7 +27,7 @@ if (!isNumber(idade)){
  //Tratamento de erro apenas com IF e ELSE adicionando alguns ou's para caso o usuário digite diferente
 let diploma = window.prompt("Você possui diploma?")
 if (diploma === "sim" || "SIM" || "Sim") {
-    console.log("Você escolheu 'sim'.");
+    console.log("Você escolheu sim'.");
   } else if (escolha === "não" || "NÃO" || "Não") {
     console.log("Você escolheu 'não'.");
   } else {
