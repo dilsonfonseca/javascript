@@ -7,7 +7,10 @@
 console.log(dilson.cor)*/
 
 function dilson(cor, idade, corCabelo){
-    this.cor = "pardo"
-    this.idade = 26
-    this.corCabelo = "preto"
+    this.cor = cor
+    this.idade = idade
+    this.corCabelo = corCabelo
 }
+let nome = new dilson("pardo", 26, "preto")
+console.log(nome.cor)
+
