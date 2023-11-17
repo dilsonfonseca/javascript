@@ -21,4 +21,18 @@ if (possuiDoutorado){
     console.log('Não possui graduação e nem doutorado')
 }
 
-10 == 7
+var x = 10
+console.log(x !== 11)
+
+var corFavorita = 'Vermelho'
+
+switch (corFavorita){
+    case 'Azul':
+        console.log('Olhe para o céu')
+        break
+    case 'Vermelho':
+        console.log('Olhe para as rosas')
+        break
+    default:
+        console.log('Feche os olhos')
+}
