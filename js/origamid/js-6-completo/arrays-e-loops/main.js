@@ -1,11 +1,11 @@
-var videoGames = ['Switch', 'PS4', 'Xbox']
+var videoGames = ['Switch', 'PS4', 'Xbox', '3DS']
 
-console.log(videoGames[1])
+/*console.log(videoGames[1])
 console.log(videoGames.pop())
 console.log(videoGames)
 console.log(videoGames.push('3DS'))
-console.log(videoGames)
+console.log(videoGames)*/
 
-for (let numero = 0; numero <= 10; numero++){
-    console.log(numero)
+for (var item = 0; item < videoGames.length; item++){
+    console.log(videoGames[item])
 }
