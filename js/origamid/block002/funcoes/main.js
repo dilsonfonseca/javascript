@@ -55,3 +55,11 @@ function isEven(numero){
 }
 
 console.log(isEven(3))
+
+function tipoDado(dado){
+    return typeof dado
+}
+
+console.log(tipoDado('dilson'))
+
+
