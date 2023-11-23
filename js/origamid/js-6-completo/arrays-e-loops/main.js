@@ -38,5 +38,5 @@ for(var i = 0; i < 3; i++){
     console.log(frutas2[i])
 }
 
-var ultimaFruta = frutas2[4]
+var ultimaFruta = frutas2[frutas2.length - 1]
 console.log(ultimaFruta)
