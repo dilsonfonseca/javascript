@@ -11,9 +11,9 @@ const semana ='Sexta'
 console.log(semana)
 
 const data = {
-    dia: 28,
-    mes: 'Dezembro',
     ano: 2018,
+    mes: 'Dezembro',
+    dia: 28,
 }
 
 data.dia = 29
